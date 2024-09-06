@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="./Images/profile.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/risponsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="Hero" id="home">
+        <header>
+            <div class="icon">
+                <img src="./Images/Leonardo_Phoenix_Create_a_sleek_minimalist_icon_featuring_the_1.jpg" alt="icon"
+                    height="50px" width="50px" />
+            </div>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Contect</li>
+                </ul>
+            </nav>
+            <div class="dark-btn">
+                <img src="./Images/moon.png" alt="moon" height="40px" width="50px" />
+            </div>
+            <button id="btn-header" onclick="downloadResume()">Resume
+                <img id="image-header" src="./Images/download.png" alt="download" height="20px" width="20px" />
+            </button>
+        </header>
+        <div class="Slide1">
+            <div id="profile-image">
+                <img src="./Images/YASH.jpg" alt="YASH" height="100%" width="100%" />
+            </div>
+            <div id="intro-text">
+                <label>I'm <span>Yash Patel<br /></span>
+                    Front-end Developer</label><br />
+                <button id="get-btn">Get In Touch</button>
+            </div>
+        </div>
+    </div>
+    <div class="slide2" id="about">
+        <h1>About</h1>
+        <div class="about-text">
+            <span>As a fresher with 4 months of experience as a Front-end Developer, I bring a strong foundation in
+                HTML,
+                CSS, and JavaScript, along with hands-on experience with React js. My academic background in Computer
+                Engineering has equipped me with a solid understanding of software development principles, and my recent
+                experience has allowed me to apply these skills in a real-world setting.</span>
+        </div>
+    </div>
+    <div class="slide3">
+        <h1>Skills</h1>
+        <div class="skills">
+            <div id="html">
+                <img src="./Images/html.png" alt="html" height="150px" width="150px" /><br />
+                <div class="meter">
+                    <div class="meter-fill1"></div>
+                </div>
+                <span id="percentage">75%</span>
+            </div>
+            <div id="css">
+                <img src="./Images/css.png" alt="css" height="150px" width="150px" />
+                <div class="meter">
+                    <div class="meter-fill2"></div>
+                </div>
+                <span id="percentage">75%</span>
+            </div>
+            <div id="javaScript">
+                <img src="./Images/javascript.png" alt="javaScript" height="150px" width="150px" />
+                <div class="meter">
+                    <div class="meter-fill3"></div>
+                </div>
+                <span id="percentage">65%</span>
+            </div>
+            <div id="react">
+                <img src="./Images/react.png" alt="react" height="150px" width="150px" />
+                <div class="meter">
+                    <div class="meter-fill4"></div>
+                </div>
+                <span id="percentage">50%</span>
+            </div>
+        </div>
+    </div>
+    <div class="slide4" id="projects">
+        <h1>Projects</h1>
+        <div class="Projects">
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            <div class="Project">
+                <h2>E-commerce Website (React.js)</h2>
+                <div class="Project-text">
+                    <span>• Developed a web-based application that enhanced customer and merchant services, increasing
+                        sales and profits. Reduced manual work by 85%, improved order processing efficiency by 90%, and
+                        saved 70% of transaction management time.<br />
+                        • Boosted user satisfaction by 80% and ensured 95% data accuracy. Improved inventory management
+                        by 75% and offered 85% real-time data access, enabling better business decisions.
+                    </span>
+                </div>
+            </div>
+            <div class="Project">
+                <h2>Travelling Website (using React.Js)</h2>
+                <div class="Project-text">
+                    <span>
+                        • Developed and implemented a state-of-the-art travel website using React.js, enhancing user
+                        experience with dynamic content and real-time search capabilities. Integrated interactive
+                        elements such as maps and personalized recommendations, leading to a 75% increase in user
+                        engagement.
+                    </span>
+                </div>
+            </div>
+            <div class="Project">
+                <h2>Chatting Application (Design)</h2>
+                <div class="Project-text">
+                    <span>
+                        • The project will focus on user experience, with features like hover effects, smooth
+                        transitions, and a mobile-friendly design.<br />
+                        • This project will demonstrate your ability to build a functional and visually appealing chat
+                        application using HTML and CSS.
+                    </span>
+                </div>
+            </div>
+            <div style="text-align:center; position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+    </div>
+    <div class="slide5" id="contect">
+        <h1>Contect</h1>
+        <div class="contect">
+            <div class="email" onclick="sendEmail()">
+                    <img src="./Images/email.png" alt="email" height="20px" width="20px" />
+                    <span>yashupatel1500@gmail.com</span>
+            </div>
+            <div class="phone" onclick="callPhone()">
+                <img src="./Images/phone-call.png" alt="phone" height="20px" width="20px" />
+                <span>+91 9408246860</span>
+            </div>
+            <div class="location" onclick="openMap()">
+                <img src="./Images/gps.png" alt="location" height="20px" width="20px">
+                <span>Himatnagar,Gujarat</span>
+            </div>
+        </div>
+        <hr />
+        <div class="foot">
+            <span>&copy;2024 All Rights Reserved.</span>
+            <div class="social">
+                <a href="https://github.com/yashkpatel20" target="_blank">
+                    <img src="./Images/github.png" alt="github" height="24px" width="24px" />
+                </a>
+                <a href="https://www.linkedin.com/in/yash-patel-89b3a6282/" target="_blank">
+                    <img src="./Images/linkedin.png" alt="linkedin" height="22px" width="24px">
+                </a>
+                <a href="https://www.instagram.com/yashu_patel1500?igsh=cWdwdnRtbnF3ODk2" target="_blank">
+                    <img src="./Images/instagram.png" alt="instagram" height="24px" width="24px" />
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100015103576318&mibextid=ZbWKwL" target="_blank">
+                    <img src="./Images/facebook.png" alt="facebook" height="24px" width="24px">
+                </a>
+                <a href="https://x.com/yashpatel1500?t=4Lzfk7OI5-W3tcGNjDOHxw&s=09" target="_blank">
+                    <img src="./Images/twitter.png" alt="twitter" height="24px" width="24px">
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>
