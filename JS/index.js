@@ -1,3 +1,31 @@
+//dark button
+const rbtn = document.querySelector(".dark-btn");
+const rimage = document.getElementById("dark-img");
+if (window.matchMedia('(min-width: 750px) and (max-width: 780px)').matches) {
+
+    // Set the default image to moon-dark.png only for this width range
+    rimage.src = "./Images/moon-dark.png";
+
+    console.log("Elements found and script is running.");
+
+    rbtn.addEventListener("click", function () {
+      console.log("Div clicked!");
+
+      if (rimage.src.includes("moon-dark.png")) {
+        rimage.src = "./Images/moon.png";
+        console.log("Image switched to moon.png");
+      } else {
+        rimage.src = "./Images/moon-dark.png";
+        console.log("Image switched to moon-dark.png");
+      }
+    });
+}
+else{
+  rimage.src = "./Images/moon.png";
+}
+
+
+//resume button
 const btn = document.getElementById("btn-header");
 const image = document.getElementById("image-header");
 

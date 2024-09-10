@@ -5,21 +5,27 @@
         top: 60%;
     }
 
-    #html, #css, #javaScript, #react {
+    #html,
+    #css,
+    #javaScript,
+    #react {
         height: 180px;
         width: 180px;
         margin-left: 200px;
         margin-right: 120px;
     }
 
-    #html:hover, #css:hover, #javaScript:hover, #react:hover {
+    #html:hover,
+    #css:hover,
+    #javaScript:hover,
+    #react:hover {
         height: 178px;
         width: 178px;
-        border: 1.5px #212020 solid; 
+        border: 1.5px #212020 solid;
     }
 
     .meter {
-        width: 100px; 
+        width: 100px;
         left: 20px;
     }
 
@@ -27,6 +33,7 @@
         font-size: 14px;
         bottom: 10px;
     }
+
     .slide5 {
         height: 250px;
     }
@@ -37,17 +44,19 @@
     }
 
     .contect {
-        width: 90%; 
+        width: 90%;
         top: 170px;
     }
 
-    .email, .phone, .location {
+    .email,
+    .phone,
+    .location {
         height: 80%;
         padding-left: 20px;
     }
 
     .email {
-        width: 30%; 
+        width: 30%;
     }
 
     .phone {
@@ -58,17 +67,21 @@
         width: 22%;
     }
 
-    .email img, .phone img, .location img {
+    .email img,
+    .phone img,
+    .location img {
         height: 18px;
         width: 18px;
     }
 
-    .email span, .phone span, .location span {
-        font-size: 18px; 
+    .email span,
+    .phone span,
+    .location span {
+        font-size: 18px;
     }
 
     .slide5 hr {
-        width: 85%; 
+        width: 85%;
         bottom: 40px;
     }
 
@@ -81,7 +94,7 @@
     }
 
     .social {
-        width: 25%; 
+        width: 25%;
     }
 
     .social img {
@@ -90,13 +103,13 @@
     }
 
     #intro-text {
-        height: 40%; 
-        width: 30%;  
-        left: 15%;   
+        height: 40%;
+        width: 30%;
+        left: 15%;
     }
 
     #intro-text label {
-        font-size: 25px; 
+        font-size: 25px;
         line-height: 40px;
     }
 
@@ -106,10 +119,10 @@
 
     #intro-text button {
         font-size: 18px;
-        height: 45px;   
-        width: 130px;   
-        top: 120px;     
-        left: 15px;     
+        height: 45px;
+        width: 130px;
+        top: 120px;
+        left: 15px;
     }
 
     #intro-text button:hover {
@@ -122,7 +135,7 @@
     }
 
     .slide2 {
-        height: 450px; 
+        height: 450px;
     }
 
     .slide2 h1 {
@@ -132,14 +145,14 @@
 
     .about-text {
         height: 280px;
-        width: 90%; 
+        width: 90%;
         bottom: 15%;
-        left: 5%; 
+        left: 5%;
         right: 5%;
     }
 
     .about-text span {
-        font-size: 30px; 
+        font-size: 30px;
         line-height: 1.4;
     }
 
@@ -154,17 +167,18 @@
 
     .Projects {
         height: 500px;
-        width: 70%; 
-        bottom: 55%; 
+        width: 70%;
+        bottom: 55%;
     }
 
-    .prev, .next {
+    .prev,
+    .next {
         font-size: 22px;
-        padding: 12px; 
+        padding: 12px;
     }
 
     .dot {
-        height: 12px; 
+        height: 12px;
         width: 12px;
         margin: 0 3px;
     }
@@ -179,25 +193,35 @@
     }
 
     .Project-text {
-        height: 250px; 
+        height: 250px;
         width: 85%;
     }
 
     .Project-text span {
-        font-size: 22px; 
+        font-size: 22px;
         line-height: 1.2;
     }
+
 }
+
+@media only screen and (width:1280px) {
+    .social {
+        width: 18%;
+    }
+}
+
 /* screen 2 */
 
 @media only screen and (min-width: 950px) and (max-width: 1024px) {
     body {
-        height: auto; /* Adjusted to fit content */
+        height: auto;
+        /* Adjusted to fit content */
     }
 
     .Hero {
         height: 650px;
     }
+
 
     header {
         height: 45px;
@@ -301,7 +325,10 @@
         top: 55%;
     }
 
-    #html, #css, #javaScript, #react {
+    #html,
+    #css,
+    #javaScript,
+    #react {
         height: 180px;
         width: 180px;
         margin-left: 50px;
@@ -332,7 +359,8 @@
         top: 55%;
     }
 
-    .prev, .next {
+    .prev,
+    .next {
         font-size: 20px;
         padding: 14px;
     }
@@ -374,7 +402,9 @@
         top: 160px;
     }
 
-    .email, .phone, .location {
+    .email,
+    .phone,
+    .location {
         height: 80%;
         padding-left: 20px;
     }
@@ -391,17 +421,21 @@
         width: 22%;
     }
 
-    .email img, .phone img, .location img {
+    .email img,
+    .phone img,
+    .location img {
         height: 18px;
         width: 18px;
     }
 
-    .email span, .phone span, .location span {
+    .email span,
+    .phone span,
+    .location span {
         font-size: 18px;
     }
 
     .slide5 hr {
-        width: 75%;
+        width: 85%;
         bottom: 40px;
     }
 
@@ -414,14 +448,17 @@
     }
 
     .social {
-        width: 30%;
+        width: 28%;
     }
 
     .social img {
         height: 80%;
-        padding-left: 15px;
+        display: flex;
+        align-items: center;
+
     }
 }
+
 @media only screen and (width: 1024px) {
     .skills {
         height: 500px;
@@ -429,21 +466,27 @@
         top: 60%;
     }
 
-    #html, #css, #javaScript, #react {
+    #html,
+    #css,
+    #javaScript,
+    #react {
         height: 180px;
         width: 180px;
         margin-left: 150px;
         margin-right: 80px;
     }
 
-    #html:hover, #css:hover, #javaScript:hover, #react:hover {
+    #html:hover,
+    #css:hover,
+    #javaScript:hover,
+    #react:hover {
         height: 178px;
         width: 178px;
-        border: 1.5px #212020 solid; 
+        border: 1.5px #212020 solid;
     }
 
     .meter {
-        width: 100px; 
+        width: 100px;
         left: 20px;
     }
 
@@ -451,34 +494,118 @@
         font-size: 14px;
         bottom: 10px;
     }
+
+    .social {
+        width: 24%;
+    }
 }
-@media only screen and (min-width: 750px) and (max-width: 949px) {
+
+/* screen3 */
+@media only screen and (min-width: 750px) and (max-width: 780px) {
+    header {
+        height: 50px;
+        width: 90%;
+        position: relative;
+        background-color: transparent;
+        border: none;
+    }
+
+    nav {
+        visibility: hidden;
+    }
+
+    .icon {
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+    }
+
+    #profile-image {
+        width: 45%;
+        position: absolute;
+        right: 30px;
+    }
+
+    #intro-text {
+        width: 45%;
+        background-color: transparent;
+        position: absolute;
+        left: 20px;
+    }
+
+    .about-text span {
+        font-size: 25px;
+    }
+
     .skills {
-        height: 500px;
-        width: 70%;
-        top: 60%;
+        width: 80%;
     }
 
-    #html, #css, #javaScript, #react {
-        height: 180px;
-        width: 180px;
-        margin-left: 200px;
-        margin-right: 120px;
+    #html,
+    #css,
+    #javaScript,
+    #react {
+        height: 200px;
+        width: 30%;
+        margin-left: 80px;
+        margin-right: 60px;
     }
 
-    #html:hover, #css:hover, #javaScript:hover, #react:hover {
-        height: 178px;
-        width: 178px;
-        border: 1.5px #212020 solid; 
+    .Projects {
+        width: 80%;
     }
 
-    .meter {
-        width: 100px; 
-        left: 20px;
+    .contect {
+        width: 95%;
+        background-color: transparent;
     }
 
-    #percentage {
-        font-size: 14px;
-        bottom: 10px;
+    .email {
+        width: 25%;
+        position: relative;
+    }
+
+    .phone {
+        position: relative;
+    }
+
+    .location {
+        position: relative;
+    }
+
+    .email img,
+    .phone img,
+    .location img {
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        left: 0%;
+    }
+
+    .email span,
+    .location span {
+        color: #212020;
+        font-size: 15px;
+        position: absolute;
+        left: 15%;
+    }
+
+    .phone span {
+        position: absolute;
+        left: 18%;
+        font-size: 15px;
+    }
+
+    .slide5 hr {
+        width: 95%;
+    }
+
+    .foot {
+        width: 95%;
+    }
+
+    .social {
+        width: 31%;
     }
 }
+
