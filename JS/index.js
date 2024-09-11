@@ -1,20 +1,23 @@
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener('load', function() {
   // Simulate an API request or any async operation
   setTimeout(() => {
       hideLoader();
       showContent();
-  }, 3000); // Replace with your actual data loading logic and time
+  }, 3000); // 3 seconds loader display (can be adjusted)
+
   const loader = document.getElementById("loader");
   const content = document.getElementById("content");
-  function hideLoader() {
 
+  function hideLoader() {
+      // Hide the loader
       loader.style.display = "none";
-      content.style.overflow = "hidden";
   }
 
   function showContent() {
-
+      // Display the content after loader is hidden
       content.style.display = "block";
+      // Enable overflow for scrolling the content
+      document.body.style.overflow = "auto";
   }
 });
 //dark button
