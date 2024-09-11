@@ -1,9 +1,9 @@
-window.addEventListener('load', function() {
+window.addEventListener('DOMContentLoaded', function() {
   // Simulate an API request or any async operation
   setTimeout(() => {
       hideLoader();
       showContent();
-  }, 5000); // 3 seconds loader display (can be adjusted)
+  }, 3000); // 3 seconds loader display (can be adjusted)
 
   const loader = document.getElementById("loader");
   const content = document.getElementById("content");
