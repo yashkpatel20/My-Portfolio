@@ -3,7 +3,7 @@ window.addEventListener('load', function() {
   setTimeout(() => {
       hideLoader();
       showContent();
-  }, 3000); // 3 seconds loader display (can be adjusted)
+  }, 5000); // 3 seconds loader display (can be adjusted)
 
   const loader = document.getElementById("loader");
   const content = document.getElementById("content");
