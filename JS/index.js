@@ -1,3 +1,22 @@
+document.addEventListener("DOMContentLoaded", () => {
+  // Simulate an API request or any async operation
+  setTimeout(() => {
+      hideLoader();
+      showContent();
+  }, 3000); // Replace with your actual data loading logic and time
+  const loader = document.getElementById("loader");
+  const content = document.getElementById("content");
+  function hideLoader() {
+
+      loader.style.display = "none";
+      content.style.overflow = "hidden";
+  }
+
+  function showContent() {
+
+      content.style.display = "block";
+  }
+});
 //dark button
 const rbtn = document.querySelector(".dark-btn");
 const rimage = document.getElementById("dark-img");

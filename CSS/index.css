@@ -6,9 +6,43 @@ body {
 }
 
 body::-webkit-scrollbar {
-    display: none; /*crome*/
+    display: none;
+    /*crome*/
+}
+/* Loader Styles */
+
+.loader {
+    width: 40px;
+    height: 40px;
+    --c:no-repeat linear-gradient(#212020 0 0);
+    background: var(--c),var(--c),var(--c),var(--c);
+    background-size: 21px 21px;
+    animation: l5 1.5s infinite cubic-bezier(0.3,1,0,1);
+    margin: auto; /* Centers the loader */
+    position: absolute; /* Allows the loader to be centered */
+    top: 0; /* Positioning from the top */
+    right: 0; /* Positioning from the right */
+    bottom: 0; /* Positioning from the bottom */
+    left: 0; /* Positioning from the left */
+    position: fixed;
+
+}
+body > .loader{
+    scroll-behavior: none;
+}
+@keyframes l5 {
+   0%   {background-position: 0    0,100% 0   ,100% 100%,0 100%}
+   33%  {background-position: 0    0,100% 0   ,100% 100%,0 100%;width:60px;height: 60px}
+   66%  {background-position: 100% 0,100% 100%,0    100%,0 0   ;width:60px;height: 60px}
+   100% {background-position: 100% 0,100% 100%,0    100%,0 0   }
 }
 
+
+/* Hide content initially */
+.hidden {
+    display: none;
+    
+}
 .Hero {
     height: 735px;
     width: 100%;
@@ -19,7 +53,7 @@ body::-webkit-scrollbar {
 header {
     height: 50px;
     width: 80%;
-    position:fixed;
+    position: fixed;
     top: 20px;
     left: 0px;
     right: 0px;
@@ -72,7 +106,7 @@ ul li:hover {
 }
 
 
-.dark-btn{
+.dark-btn {
     height: 40px;
     width: 50px;
     border-radius: 50%;
@@ -200,7 +234,7 @@ ul li:hover {
     left: 50%;
     right: 50%;
     top: 15px;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .about-text {
@@ -240,7 +274,7 @@ ul li:hover {
     left: 50%;
     right: 50%;
     top: 15px;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: #212020;
 }
 
@@ -294,6 +328,7 @@ ul li:hover {
     bottom: 15px;
     left: 25px;
 }
+
 .meter-fill1 {
     width: 50%;
     height: 100%;
@@ -416,7 +451,7 @@ ul li:hover {
 .slide4 {
     height: 735px;
     width: 100%;
-    background-color:#212020;
+    background-color: #212020;
     position: relative;
 }
 
@@ -430,14 +465,14 @@ ul li:hover {
     left: 50%;
     right: 50%;
     top: 10px;
-    transform: translate(-50%,-50%);
-    color:#e7e3e3;
+    transform: translate(-50%, -50%);
+    color: #e7e3e3;
 }
 
 .Projects {
-    height:550px;
+    height: 550px;
     width: 60%;
-    background-color:#272524;
+    background-color: #272524;
     border-radius: 15px;
     position: relative;
     top: 55%;
@@ -452,7 +487,7 @@ ul li:hover {
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color:#e7e3e3;
+    color: #e7e3e3;
     font-weight: bold;
     font-size: 25px;
     transition: 0.6s ease;
@@ -468,7 +503,7 @@ ul li:hover {
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color:#e7e3e3;
+    color: #e7e3e3;
     font-weight: bold;
     font-size: 25px;
     transition: 0.6s ease;
@@ -480,7 +515,7 @@ ul li:hover {
 .prev:hover,
 .next:hover {
     color: #212020;
-    background-color:#e7e3e3;
+    background-color: #e7e3e3;
 }
 
 .dot {
@@ -493,6 +528,7 @@ ul li:hover {
     display: inline-block;
     transition: background-color 0.6s ease;
 }
+
 .dot.active {
     background-color: #717171;
 }
@@ -505,7 +541,7 @@ ul li:hover {
 .Project {
     height: 450px;
     width: 90%;
-    background-color:transparent;
+    background-color: transparent;
     position: relative;
     top: 50%;
     left: 50%;
@@ -541,7 +577,8 @@ ul li:hover {
     color: #e7e3e3;
     line-height: 1.3;
 }
-.slide5{
+
+.slide5 {
     height: 300px;
     width: 100%;
     background-color: #e7e3e3;
@@ -559,38 +596,43 @@ ul li:hover {
     left: 50%;
     right: 50%;
     top: 15px;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
+
 .contect {
     height: 50px;
     width: 80%;
-    background-color:transparent;
+    background-color: transparent;
     position: relative;
     top: 200px;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
 }
 
-.email, .phone, .location {
+.email,
+.phone,
+.location {
     height: 90%;
     background-color: #bbb;
     border-radius: 10px;
     display: flex;
-    align-items: center; 
-    justify-content: start; 
+    align-items: center;
+    justify-content: start;
     padding-left: 30px;
     cursor: pointer;
 }
 
-.email:hover, .phone:hover, .location:hover{
+.email:hover,
+.phone:hover,
+.location:hover {
     border: 2px #212020 solid;
     background-color: #e7e3e3;
 }
 
-.contect a{
+.contect a {
     text-decoration: none;
 }
 
@@ -606,39 +648,44 @@ ul li:hover {
     width: 18%;
 }
 
-.email img, .phone img, .location img {
+.email img,
+.phone img,
+.location img {
     height: 20px;
     width: 20px;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
-.email span, .phone span, .location span {
+.email span,
+.phone span,
+.location span {
     color: #212020;
     font-size: 20px;
 }
-.slide5 hr{
+
+.slide5 hr {
     width: 80%;
     position: absolute;
     bottom: 50px;
     right: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-color: #212020;
     opacity: 0.5;
 }
 
-.foot{
+.foot {
     height: 30px;
     width: 80%;
     position: absolute;
     left: 50%;
     right: 50%;
     bottom: 0px;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-color: transparent;
 }
 
-.foot span{
+.foot span {
     font-size: 20px;
     color: #212020;
     display: flex;
@@ -647,19 +694,21 @@ ul li:hover {
     height: 100%;
     float: left;
 }
-.social{
+
+.social {
     height: 100%;
     width: 19%;
-    background-color:transparent;
+    background-color: transparent;
     float: right;
     object-fit: cover;
     border-radius: 15px;
 }
-.social img{
+
+.social img {
     height: 24px;
     width: 24px;
     display: flex;
     float: right;
     padding-left: 20px;
-    
+
 }
