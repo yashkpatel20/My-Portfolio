@@ -156,6 +156,7 @@ document.querySelector('.dark-btn').addEventListener('click', function () {
   // Elements to change color
   const slides = ['.foot span', '.slide5 h1', '.slide3 h1', '#intro-text', '#intro-text span', '#intro-text label', '.Hero', '.Slide1', '.slide3', '.slide5'];
   const icons = ['.social'];
+  const profile = ['#profile-image'];
   slides.forEach(slideClass => {
     const slideElement = document.querySelector(slideClass);
     if (slideElement) {
@@ -180,7 +181,18 @@ document.querySelector('.dark-btn').addEventListener('click', function () {
       }
     }
   });
-
+  profile.forEach(profilesclass => {
+    const profileElemt = document.querySelector(profilesclass);
+    
+    if (profileElemt) {
+      if (document.body.classList.contains('dark-mode')) {
+        profileElemt.style.boxShadow = "0px 0px 20px 8px #e7e3e3";
+      } else {
+        profileElemt.style.boxShadow = '';
+      }
+    }
+  });
+  
 });
 
 //email
