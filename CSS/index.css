@@ -315,7 +315,7 @@ ul li:hover {
 #html img {
     background-color: transparent;
     position: absolute;
-    top: 10px;
+    
 }
 
 .meter {
@@ -369,7 +369,6 @@ ul li:hover {
 #css img {
     background-color: transparent;
     position: absolute;
-    top: 10px;
 }
 
 .meter-fill2 {
@@ -404,7 +403,7 @@ ul li:hover {
 #javaScript img {
     background-color: transparent;
     position: absolute;
-    top: 10px;
+
 }
 
 .meter-fill3 {
@@ -438,7 +437,7 @@ ul li:hover {
 #react img {
     background-color: transparent;
     position: absolute;
-    top: 10px;
+
 }
 
 .meter-fill4 {

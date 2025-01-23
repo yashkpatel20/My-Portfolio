@@ -47,6 +47,30 @@ else{
 }
 
 
+if (window.matchMedia('(min-width: 200px) and (max-width: 400px)').matches) {
+
+  // Set the default image to moon-dark.png only for this width range
+  rimage.src = "./Images/moon-dark.png";
+
+  console.log("Elements found and script is running.");
+
+  rbtn.addEventListener("click", function () {
+    console.log("Div clicked!");
+
+    if (rimage.src.includes("moon-dark.png")) {
+      rimage.src = "./Images/moon.png";
+      console.log("Image switched to moon.png");
+    } else {
+      rimage.src = "./Images/moon-dark.png";
+      console.log("Image switched to moon-dark.png");
+    }
+  });
+}
+else{
+rimage.src = "./Images/moon.png";
+}
+
+
 //resume button
 const btn = document.getElementById("btn-header");
 const image = document.getElementById("image-header");
@@ -187,8 +211,10 @@ document.querySelector('.dark-btn').addEventListener('click', function () {
     if (profileElemt) {
       if (document.body.classList.contains('dark-mode')) {
         profileElemt.style.boxShadow = "0px 0px 20px 8px #e7e3e3";
+        profileElemt.style.border = "2px #e7e3e3 solid";
       } else {
         profileElemt.style.boxShadow = '';
+        profileElemt.style.border = '';
       }
     }
   });
