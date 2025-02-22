@@ -1,3 +1,6 @@
+document.addEventListener("contextmenu", function (event) {
+  event.preventDefault();
+});
 window.addEventListener('DOMContentLoaded', function() {
   // Simulate an API request or any async operation
   setTimeout(() => {
